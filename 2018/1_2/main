@@ -1,0 +1,20 @@
+def main():
+    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/1_2/input.txt"
+    frequency_drift = 0
+    previous_sum = set()
+    loop = True
+    previous_sum.add(0)
+    while loop:
+        for line in open(path):
+            line = line.replace("\n", "")
+            frequency_drift += int(line)
+            if frequency_drift in previous_sum:
+                loop = False
+                break
+            else:
+                previous_sum.add(frequency_drift)
+    print(frequency_drift)
+
+
+if __name__ == "__main__":
+    main()

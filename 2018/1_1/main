@@ -1,0 +1,12 @@
+def main():
+    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/1_1/input.txt"
+    frequency_drift = []
+    for line in open(path):
+        line = line.replace("\n", "")
+        frequency_drift.append(line)
+    frequency_drift = list(map(int, frequency_drift))
+    print(sum(frequency_drift))
+
+
+if __name__ == "__main__":
+    main()
