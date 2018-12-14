@@ -1,5 +1,5 @@
 def main():
-    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/2_1/input.txt"
+    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/2018/2_1/input.txt"
     input_line = {}
     index = 0
     i = 0

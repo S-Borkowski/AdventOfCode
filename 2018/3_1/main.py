@@ -1,8 +1,9 @@
 def main():
-    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/3_1/input.txt"
-    write_path = "/Users/Stanisław/PycharmProjects/AdventOfCode/3_1/output.txt"
+    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/2018/3_1/input.txt"
+    write_path = "/Users/Stanisław/PycharmProjects/AdventOfCode/2018/3_1/output.txt"
     file = open(write_path, "w+")
     field = [[0 for w in range(1000)] for h in range(1000)]
+    sqr_inches_of_fabric_2_or_more_claims = 0
 
     for line in open(path):
         line = line.replace("\n", "")
@@ -19,13 +20,14 @@ def main():
                     field[x][y] = 1
                 elif field[x][y] == 1:
                     field[x][y] = 2
+                    sqr_inches_of_fabric_2_or_more_claims += 1
                 else:
                     x += 1
                     continue
                 x += 1
             x -= width
             y += 1
-    print(sum(el.count(2) for el in field))
+    print(sqr_inches_of_fabric_2_or_more_claims)
 
     line = ""
     for h in range(1000):

@@ -1,5 +1,5 @@
 def main():
-    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/3_1/input.txt"
+    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/2018/3_1/input.txt"
     field = [[0 for w in range(1000)] for h in range(1000)]
 
     for line in open(path):

@@ -1,5 +1,5 @@
 def main():
-    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/2_1/input.txt"
+    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/2018/2_1/input.txt"
     check_letter = set()
     letters = {}
     x = 0

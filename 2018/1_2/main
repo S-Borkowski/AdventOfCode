@@ -1,5 +1,5 @@
 def main():
-    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/1_2/input.txt"
+    path = "/Users/Stanisław/PycharmProjects/AdventOfCode/2018/1_2/input.txt"
     frequency_drift = 0
     previous_sum = set()
     loop = True
